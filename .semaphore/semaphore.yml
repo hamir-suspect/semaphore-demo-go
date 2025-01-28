@@ -2,11 +2,8 @@ version: v1.0
 name: Semaphore Go CI example
 agent:
   machine:
-    type: f1-standard-2
-    os_image: ubuntu2004
-  containers:
-    - name: main
-      image: 'semaphoreci/ubuntu:20.04'
+    type: a2-standard-4
+    os_image: macos-xcode15
 blocks:
   - name: Build project
     task:
