@@ -2,8 +2,11 @@ version: v1.0
 name: Semaphore Go CI example
 agent:
   machine:
-    type: e2-standard-2
+    type: f1-standard-2
     os_image: ubuntu2004
+  containers:
+    - name: main
+      image: 'semaphoreci/ubuntu:20.04'
 blocks:
   - name: Build project
     task:
